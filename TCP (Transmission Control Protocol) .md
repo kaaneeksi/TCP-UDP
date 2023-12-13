@@ -20,3 +20,46 @@ TCP, bağlantı odaklı bir protokoldür. Kaynak cihaz hedef bir cihaza veri gö
 
 
   ![handshake](https://github.com/kaaneeksi/TCP-UDP/blob/main/G%C3%B6rseller/3-way-handshake.jpg?raw=true)
+
+  ---
+
+TCP'de bu üç ana aşamanın gerçekleşmesi için bazı ara durumlar da gerçekleşmektedir. Bu ara durumlar aşağıdaki gibi sıralanmaktadır.
+
+####  LISTEN
+Sunucu tarafından bir TCP bağlantı isteğinin beklenildiği durumdur. Dinleme modu olarak adlandırılır.
+
+#### SYN-SENT
+Karşı tarafa TCP bağlantısı isteği gönderildikten sonra karşı taraftan bağlantı isteğine cevap verilmesi beklenilen durum olarak adlandırılır.
+
+#### SYN-RECEIVED
+SYN bayrağı ile yapılan bağlantı isteğine sunucunun SYN-ACK bayrağı ile cevap vermesi aşamasından sonraki bekleme durumu olarak adlandırılır.
+
+#### ESTABLISHED
+Bağlantı kurulduktan sonra gelen veri transferinin yapıldığı durumdur.
+
+#### FIN-WAIT-1
+Sunucu ve istemci tarafındaki bekleme durumudur.
+
+#### FIN-WAIT-2
+Karşı taraftan TCP bağlantısının bitirilme isteğinin beklendiği durumdur.
+
+#### CLOSE-WAIT
+Sunucu ve istemci tarafından bağlantı kapatma talebinin beklendiği durumudur.
+
+#### CLOSING
+Karşı tarafa bağlantının bitirilmesine dair bir ACK bayrağı gönderildikten sonra bağlantının bitmesini bekleme durumu olarak adlandırılır.
+
+#### LAST-ACK
+Sunucu ve istemci tarafında ACK beklendiği durumdur.
+
+#### TIME-WAIT
+Bekleme durumudur.
+
+#### CLOSED
+TCP bağlantısının tamamen bittiği durum olarak adlandırılır.
+
+---
+
+## TCP Bayrakları
+
+![TCP-flag](https://github.com/kaaneeksi/TCP-UDP/blob/main/G%C3%B6rseller/TCP-bayraklar%C4%B1.png?raw=true)
