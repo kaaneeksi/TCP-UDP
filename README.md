@@ -4,13 +4,13 @@ TCP güvenilir bir **taşıma katmanı** (OSI/Transport) protokolüdür. TCP'de 
 onay alamazsa gitmeyen segmentleri tekrar gönderir. Böylelikle segmentler eksiksiz bir şekilde gitmiş olur. 
 
 Yani TCP ile gönderilen veriler sorugulanır, her bir segmente bir segment numarası atandığı için kayıp veriler tespit edilip tekrardan gönderilir. 
-**Bu özelliği ile UDP ye göre daha yavaş ama daha güvenli bir protokoldür.**
+**Bu özelliği ile UDP ye göre daha yavaş ama daha güvenli bir protokoldür.**  **TCP, Dosya paylaşımı, E-posta ve Dosya indirme gibi durumlarda kullanılır.**
 
 ---
 
 # UDP (User Datagram Protocol)
 
-UDP güvenilir olmayan bir **taşıma katmanı** (OSI/Transport) protokolüdür. Güvenilir olmamasının sebebi TCP protokolünde olan güvenlik mekanizmasının olmamasıdır yani UDP verilerin karşı tarafa ulaşıp ulaşmadığı bilgisini size vermez, tek amacı hızlı bir şekilde veri iletimidir, bu sebeple TCP ye göre daha güvensiz fakat hızlıdır.
+UDP güvenilir olmayan bir **taşıma katmanı** (OSI/Transport) protokolüdür. Güvenilir olmamasının sebebi TCP protokolünde olan güvenlik mekanizmasının olmamasıdır yani UDP verilerin karşı tarafa ulaşıp ulaşmadığı bilgisini size vermez, tek amacı hızlı bir şekilde veri iletimidir, bu sebeple TCP ye göre daha güvensiz fakat hızlıdır. **UDP, ses ve video gönderimi gibi durumlarda kullanılır.**
 
 
 ## TCP Nasıl Çalışır?
@@ -39,7 +39,18 @@ Alıcı mektup ile beraber bu kartı alınca bu kartı imzalar ve sizin adresini
 UDP ile güvenli olamayan veri gönderimini normal posta sistemine benzetebiliriz. Burada alıcıya sadece bir mektup göndeririz ve mektubun karşıya ulaşıp ulaşmadığı hakkında bir bilgide almayız.
 
 ---
+
+## TCP - UDP FARKLARI
+
+* TCP, bağlantı tabanlı (connection oriented) bir protokoldür, UDP bağlantı tabanlı değildir (connectionless).
+* TCP'de akış kontrolü vardır, UDP'de akış kontrolü yoktur.
+* TCP, UDP'den daha yavaştır, çünkü verinin karşı tarafa ulaşıp ulaşmadığını kontrol eder.
+* UDP, ses ve video gönderiminde kullanılır. TCP'ye göre daha hızlıdır fakat güvenilir (reliable) değildir. Veri ismine datagram denilir. Datagramın segmentten farkı ise içerisinde sıra numarasının bulunmamasıdır.
+
 ---
+
+## EK BİLGİ
+
 TCP'de bu üç ana aşamanın gerçekleşmesi için bazı ara durumlar da gerçekleşmektedir. Bu ara durumlar aşağıdaki gibi sıralanmaktadır.
 
 ####  LISTEN
