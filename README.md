@@ -21,7 +21,14 @@ TCP, bağlantı odaklı bir protokoldür. Kaynak cihaz hedef bir cihaza veri gö
 
   ![handshake](https://github.com/kaaneeksi/TCP-UDP/blob/main/G%C3%B6rseller/3-way-handshake.jpg?raw=true)
 
-  ---
+---
+  
+## TCP Güvenli İletişim Örneği
+
+TCP ile güvenli veri gönderimini iade taahhütlü posta gibi düşünün. İade taahhütlü postada gönderdiğiniz mektup ile birlikte sizizn tarafınızdan doldurulan alıcının ve sizin bilgilerinizin olduğu bir kartta alıcıya gönderilir.
+Alıcı mektup ile beraber bu kartı alınca bu kartı imzalar ve sizin adresinize geri gönderir, böylece siz alıcının mektubunuzu aldığından emin olursunuz.
+
+---
 
 TCP'de bu üç ana aşamanın gerçekleşmesi için bazı ara durumlar da gerçekleşmektedir. Bu ara durumlar aşağıdaki gibi sıralanmaktadır.
 
