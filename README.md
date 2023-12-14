@@ -1,4 +1,4 @@
-# TCP 
+# TCP (Transmission Control Protocol)
 
 TCP güvenilir bir **taşıma katmanı** (OSI/Transport) protokolüdür. TCP'de veriler segmentlere ayrılıp bir alıcıya gönderildikten sonra alıcıdan segmentlerin alındığına dair onay bekler, eğer onayı alırsa segmentlerin devamını gönderir,
 onay alamazsa gitmeyen segmentleri tekrar gönderir. Böylelikle segmentler eksiksiz bir şekilde gitmiş olur. 
@@ -8,7 +8,12 @@ Yani TCP ile gönderilen veriler sorugulanır, her bir segmente bir segment numa
 
 ---
 
-## TCP (Transmission Control Protocol) Nasıl Çalışır?
+# UDP (User Datagram Protocol)
+
+UDP güvenilir olmayan bir **taşıma katmanı** (OSI/Transport) protokolüdür. Güvenilir olmamasının sebebi TCP protokolünde olan güvenlik mekanizmasının olmamasıdır yani UDP verilerin karşı tarafa ulaşıp ulaşmadığı bilgisini size vermez, tek amacı hızlı bir şekilde veri iletimidir, bu sebeple TCP ye göre daha güvensiz fakat hızlıdır.
+
+
+## TCP Nasıl Çalışır?
 
 ### 3-Way Handshake
 
@@ -18,8 +23,7 @@ TCP, bağlantı odaklı bir protokoldür. Kaynak cihaz hedef bir cihaza veri gö
 * Bu isteği alan alıcı cihaz iletişim kurma isteğini onayladığına dair bir **SYN-ACK Mesajı** gönderir.
 * Son olarak gönderici cihaz iletişimin başladğını onaylayan bir **Acknowledgement (ACK)** mesajı gönderir ve 3 yollu el sıkışma tamamlanır.
 
-
-  ![handshake](https://github.com/kaaneeksi/TCP-UDP/blob/main/G%C3%B6rseller/3-way-handshake.jpg?raw=true)
+  ![handshake](https://github.com/kaaneeksi/TCP-UDP/blob/main/G%C3%B6rseller/UDP-TCP-farki.png?raw=true)
 
 ---
   
@@ -30,6 +34,12 @@ Alıcı mektup ile beraber bu kartı alınca bu kartı imzalar ve sizin adresini
 
 ---
 
+## UDP Güvenli Olmayan İletişim Örneği
+
+UDP ile güvenli olamayan veri gönderimini normal posta sistemine benzetebiliriz. Burada alıcıya sadece bir mektup göndeririz ve mektubun karşıya ulaşıp ulaşmadığı hakkında bir bilgide almayız.
+
+---
+---
 TCP'de bu üç ana aşamanın gerçekleşmesi için bazı ara durumlar da gerçekleşmektedir. Bu ara durumlar aşağıdaki gibi sıralanmaktadır.
 
 ####  LISTEN
